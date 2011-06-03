@@ -4,23 +4,22 @@ alias c="rails c"
 alias cl='clear'
 alias cls='cl ; ls'
 alias core_ext='cd $HOME/code/rails/activesupport/lib/active_support/core_ext'
-alias cr2jpg="ufraw-batch *.CR2 --wb=auto --exposure=1.0 --out-type=jpeg --compression=100"
+alias nef2jpg="ufraw-batch *.NEF --wb=auto --exposure=1.0 --out-type=jpeg --compression=100"
 alias d="cd $HOME/Dropbox"
-alias git="hub"
 alias h='history'
 alias hgrep='h | grep'
-alias jekyll="jekyll --server --pygments"
 alias la='ls -Al' # show hidden files
 alias lk='ls -lSr' # sort by size
 alias lr='ls -lR' # recursive ls
 alias ls='ls -hF --color' # add colors for filetype recognition
 alias lx='ls -lXB' # sort by extension
+alias ll='ls -lh'
 alias mkdir='mkdir -p'
 alias nautilus='nautilus .'
 alias old='cd $OLDPWD'
 alias ps='ps aux | more'
 alias psgrep='ps | grep'
-alias rgrep="rake routes | grep"
+alias routesgrep="rake routes | grep"
 alias rm='rm -i'
 alias s="rails s"
 alias vi="gvim -O"
