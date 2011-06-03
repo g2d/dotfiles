@@ -1,5 +1,7 @@
 My dotfiles
 
+Forked and inspired by "Luca Pette dotfiles":http://github.com/lucapette/dotfiles"
+
 This repository includes my configuration files, it also contains a _Rakefile_ for syncing file.
 
 h2. How It works
