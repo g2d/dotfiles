@@ -19,8 +19,6 @@ My git config contains usual configs, some aliases and personal colours. It also
 It uses *wirble* for colourize itself and *irb history* extension in order to remember previous commands. Furthermore it adds a method to Object to investigate interesting methods of a given object. Finally, it loads a *.rails* file if irb is called as a _rails console_ script. This rails file contains two methods to enable or disable ActiveRecord logger and also requires the *hirb* gem.
 * ackrc
 My preferences for "ack":http://betterthangrep.com
-* Xmodmap
-You should "remap":http://c2.com/cgi/wiki?RemapCapsLock caps lock to something useful too.
 
 h2. Copyright
 
