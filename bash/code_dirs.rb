@@ -1,4 +1,4 @@
-#!/usr/bin/ruby 
+#!ruby 
 
 Dir["#{File.expand_path("~/workspace")}/*"].each { |file|
     if File.directory?(file)
