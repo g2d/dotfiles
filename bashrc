@@ -64,7 +64,6 @@ extract ()
     fi
 }
 
-export PATH=.:$HOME/code/scripts/bash:$HOME/code/scripts/ruby:$PATH
 
 # loading rvm and its completion FTW
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
