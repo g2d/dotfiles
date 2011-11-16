@@ -28,6 +28,7 @@ desc 'pulls from git repository'
 task :pull do
     puts "Updating from git repository"
     system("cd " << Dir.new(File.dirname(__FILE__)).path << " && git pull")
+    system("sudo fc-cache -fv")
 end
 
 desc 'updates from git repository and then updates files in dir'
