@@ -80,7 +80,3 @@ PS1="$red[$green ($($rvm_path/bin/rvm-prompt v g)) $blue\u$red@$blue\h \W$green 
 }
 export PROMPT_COMMAND=ps_function
 
-# aliases for my projects
-$HOME/.bash/code_dirs.rb > $HOME/.bash/codedirs
-
-source $HOME/.bash/codedirs
