@@ -41,3 +41,15 @@ alias 644='chmod 644'
 alias 700='chmod 700'    
 alias 755='chmod 755'
 alias 777='chmod 777'
+
+if [ -e /etc/redhat-release ]; then
+   alias pkg_add='sudo yum install'
+   alias pkg_search='yum search'
+   alias pkg_remove='sudo yum remove'
+fi
+if [ -e /etc/debian_version ]; then
+   alias pkg_add='sudo apt-get install'
+   alias pkg_search='apt-cache search'
+   alias pkg_remove='sudo apt-get remove'
+fi
+
