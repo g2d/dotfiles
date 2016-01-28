@@ -64,6 +64,11 @@ extract ()
    fi
 }
 
+#  Open by vim latest migration in rails project
+last_migration(){
+  vim db/migrate/$(ls db/migrate/ | sort | tail -1)
+}
+
 # loading rvm and its completion FTW
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
