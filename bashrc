@@ -64,15 +64,6 @@ extract ()
    fi
 }
 
-#  Open by vim latest migration in rails project
-last_migration(){
-  vim db/migrate/$(ls db/migrate/ | sort | tail -1)
-}
-
-# loading rvm and its completion FTW
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
-
-[[ -r $rvm_path/scripts/completion ]] && . $rvm_path/scripts/completion
 
 # my personal prompt, with colours, git current branch and ruby version
 function ps_function() {
@@ -81,8 +72,7 @@ red="\[\033[0;31m\]"
 blue="\[\033[1;34m\]"
 green="\[\033[0;32m\]"
 branch='$(__git_ps1 "(%s)")'
-lsb=`lsb_release -d | awk {' print $2'}`
-PS1="$red[$green ($($rvm_path/bin/rvm-prompt v g))$blue\u$red@$blue\h$red#$blue$lsb \W$green $branch$red]$green\$$white"
+PS1="$red[$blue\u$red@$blue\h$red#$blue \W$green $branch$red]$green\$$white"
 }
 export PROMPT_COMMAND=ps_function
 
